@@ -1,0 +1,11 @@
+.tasksContainer {
+  border-radius: 5px;
+  padding: 1rem 0;
+}
+
+.msg {
+  text-align: center;
+  padding: 2rem 0;
+  color: #fff;
+  background-color: #673ab7;
+}

@@ -1,0 +1,30 @@
+.taskContainer {
+  padding: 1rem;
+  box-shadow: 1px 1px 20px 0px #c3c3c3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.taskContainer:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.taskContainer p {
+  /* color: rgba(0, 0, 0, 0.8); */
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: #f44336;
+}
+.btn:hover {
+  background-color: #c42317;
+}
+
+.taskContainer .complete {
+  color: rgb(92, 92, 92);
+  text-decoration: line-through;
+}

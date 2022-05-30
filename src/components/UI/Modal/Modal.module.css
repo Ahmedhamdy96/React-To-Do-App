@@ -1,0 +1,43 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay {
+  width: 70rem;
+  height: 30rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 5px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay header {
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: #673ab7;
+  padding: 2rem;
+}
+
+.overlay p {
+  font-size: 2rem;
+}
+
+.overlay footer {
+  padding: 2rem;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+}
