@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AddTask from "./components/AddTask/AddTask";
 import TaskList from "./components/TaskList/TaskList";
 
 const App = () => {
-  const [tasks, setTasks] = useState([]);
+  // initiate tasks at the beginning
+
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
+
+  // update tasks in local storage
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const addTaskHandler = (task) => {
     setTasks((prevTasks) => {
